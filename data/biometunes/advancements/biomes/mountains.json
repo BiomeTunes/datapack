@@ -1,0 +1,84 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:stone"
+        },
+        "title": "Entered mountains",
+        "description": "You entered a mountain biome",
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "mountains": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:mountains"
+            }
+        },
+        "snowy_mountains": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:snowy_mountains"
+            }
+        },
+        "mountain_edge": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:mountain_edge"
+            }
+        },
+        "wooded_mountains": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:wooded_mountains"
+            }
+        },
+        "gravelly_mountains": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:gravelly_mountains"
+            }
+        },
+        "modified_gravelly_mountains": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:modified_gravelly_mountains"
+            }
+        },
+        "shattered_savanna": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:shattered_savanna"
+            }
+        },
+        "shattered_savanna_plateau": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:shattered_savanna_plateau"
+            }
+        },
+        "eroded_badlands": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:eroded_badlands"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "mountains",
+            "snowy_mountains",
+            "mountain_edge",
+            "wooded_mountains",
+            "gravelly_mountains",
+            "modified_gravelly_mountains",
+            "shattered_savanna",
+            "shattered_savanna_plateau",
+            "eroded_badlands"
+        ]
+    ],
+    "rewards": {
+        "function": "biometunes:triggers/biomes/mountains"
+    }
+}

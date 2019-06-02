@@ -1,0 +1,56 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:oak_sapling"
+        },
+        "title": "Entered the end",
+        "description": "You entered the end",
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "the_end": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:the_end"
+            }
+        },
+        "small_end_islands": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:small_end_islands"
+            }
+        },
+        "end_midlands": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:end_midlands"
+            }
+        },
+        "end_highlands": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:end_highlands"
+            }
+        },
+        "end_barrens": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:end_barrens"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "the_end",
+            "small_end_islands",
+            "end_midlands",
+            "end_highlands",
+            "end_barrens"
+        ]
+    ],
+    "rewards": {
+        "function": "biometunes:triggers/biomes/the_end"
+    }
+}

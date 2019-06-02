@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:oak_sapling"
+        },
+        "title": "Entered swamp",
+        "description": "You entered a swamp biome",
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "swamp": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:swamp"
+            }
+        },
+        "swamp_hills": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:swamp_hills"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "swamp",
+            "swamp_hills"
+        ]
+    ],
+    "rewards": {
+        "function": "biometunes:triggers/biomes/swamp"
+    }
+}

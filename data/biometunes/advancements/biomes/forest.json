@@ -1,0 +1,63 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:oak_sapling"
+        },
+        "title": "Entered forest",
+        "description": "You entered a forest biome",
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "forest": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:forest"
+            }
+        },
+        "birch_forest": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:birch_forest"
+            }
+        }, 
+        "birch_forest_hills": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:birch_forest_hills"
+            }
+        },
+        "flower_forest": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:flower_forest"
+            }
+        },
+        "tall_birch_forest": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:tall_birch_forest"
+            }
+        },
+        "tall_birch_hills": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:tall_birch_hills"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "forest",
+            "birch_forest",
+            "birch_forest_hills",
+            "flower_forest",
+            "tall_birch_forest",
+            "tall_birch_hills"
+        ]
+    ],
+    "rewards": {
+        "function": "biometunes:triggers/biomes/forest"
+    }
+}

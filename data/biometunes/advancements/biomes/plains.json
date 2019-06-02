@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:oak_sapling"
+        },
+        "title": "Entered plains",
+        "description": "You entered a plains biome",
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "plains": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:plains"
+            }
+        },
+        "sunflower_plains": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:sunflower_plains"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "plains",
+            "sunflower_plains"
+        ]
+    ],
+    "rewards": {
+        "function": "biometunes:triggers/biomes/plains"
+    }
+}

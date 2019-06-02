@@ -1,0 +1,42 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:sand"
+        },
+        "title": "Entered desert",
+        "description": "You entered a desert biome",
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "visit_desert": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:desert"
+            }
+        },
+        "visit_desert_hills": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:desert_hills"
+            }
+        }, 
+        "desert_lakes": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:desert_lakes"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "visit_desert", 
+            "visit_desert_hills",
+            "desert_lakes"
+        ]
+    ],
+    "rewards": {
+        "function": "biometunes:triggers/biomes/desert"
+    }
+}

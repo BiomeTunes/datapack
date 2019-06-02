@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:oak_sapling"
+        },
+        "title": "Entered nether",
+        "description": "You entered a nether biome",
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "visit_biome": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:nether"
+            }
+        }
+    },
+    "requirements": [
+        ["visit_biome"]
+    ],
+    "rewards": {
+        "function": "biometunes:triggers/biomes/nether"
+    }
+}
