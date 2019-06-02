@@ -1,6 +1,6 @@
 
-# Stop sounds
-stopsound @s music
+# Add playing tag to all
+#execute as @a[tag=!playing] run tag @s add playing
 
 # Remove advancement
 execute unless score @s biome matches 0 run advancement revoke @s only biometunes:biomes/ocean
@@ -14,5 +14,3 @@ execute unless score @s biome matches 8 run advancement revoke @s only biometune
 execute unless score @s biome matches 9 run advancement revoke @s only biometunes:biomes/the_end
 execute unless score @s biome matches 14 run advancement revoke @s only biometunes:biomes/mushroom_fields
 execute unless score @s biome matches 21 run advancement revoke @s only biometunes:biomes/jungle
-
-tag @s remove playing
