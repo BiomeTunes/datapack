@@ -1,1 +1,3 @@
-biomes with same soundtrack sould be group together, not in separate achivement files
+# Biome Tunes
+
+This is a minecraft datapack which changes music for the player dependent on biome type
