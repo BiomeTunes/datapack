@@ -8,18 +8,31 @@ stopsound @a music minecraft:music.game
 stopsound @a music minecraft:music.nether
 stopsound @a music minecraft:music.under_water
 
+# Biome specific intro music
+execute at @a as @a[scores={biome=0, soundtrackState=1},tag=!playing] run playsound ocean_intro music @s ~ ~ ~ 1
+execute at @a as @a[scores={biome=1, soundtrackState=1},tag=!playing] run playsound plains_intro music @s ~ ~ ~ 1
+execute at @a as @a[scores={biome=2, soundtrackState=1},tag=!playing] run playsound desert_intro music @s ~ ~ ~ 1
+execute at @a as @a[scores={biome=3, soundtrackState=1},tag=!playing] run playsound mountains_intro music @s ~ ~ ~ 1
+execute at @a as @a[scores={biome=4, soundtrackState=1},tag=!playing] run playsound forest_intro music @s ~ ~ ~ 1
+execute at @a as @a[scores={biome=5, soundtrackState=1},tag=!playing] run playsound taiga_intro music @s ~ ~ ~ 1
+execute at @a as @a[scores={biome=6, soundtrackState=1},tag=!playing] run playsound swamp_intro music @s ~ ~ ~ 1
+execute at @a as @a[scores={biome=8, soundtrackState=1},tag=!playing] run playsound nether_intro music @s ~ ~ ~ 1
+execute at @a as @a[scores={biome=9, soundtrackState=1},tag=!playing] run playsound the_end_intro music @s ~ ~ ~ 1
+execute at @a as @a[scores={biome=14, soundtrackState=1},tag=!playing] run playsound mushroom_fields_intro music @s ~ ~ ~ 1
+execute at @a as @a[scores={biome=21, soundtrackState=1},tag=!playing] run playsound jungle_intro music @s ~ ~ ~ 1
+
 # Biome specific music
-execute at @a as @a[scores={biome=0},tag=!playing] run playsound ocean music @s ~ ~ ~ 1
-execute at @a as @a[scores={biome=1},tag=!playing] run playsound plains music @s ~ ~ ~ 1
-execute at @a as @a[scores={biome=2},tag=!playing] run playsound desert music @s ~ ~ ~ 1
-execute at @a as @a[scores={biome=3},tag=!playing] run playsound mountains music @s ~ ~ ~ 1
-execute at @a as @a[scores={biome=4},tag=!playing] run playsound forest music @s ~ ~ ~ 1
-execute at @a as @a[scores={biome=5},tag=!playing] run playsound taiga music @s ~ ~ ~ 1
-execute at @a as @a[scores={biome=6},tag=!playing] run playsound swamp music @s ~ ~ ~ 1
-execute at @a as @a[scores={biome=8},tag=!playing] run playsound nether music @s ~ ~ ~ 1
-execute at @a as @a[scores={biome=9},tag=!playing] run playsound the_end music @s ~ ~ ~ 1
-execute at @a as @a[scores={biome=14},tag=!playing] run playsound mushroom_fields music @s ~ ~ ~ 1
-execute at @a as @a[scores={biome=21},tag=!playing] run playsound jungle music @s ~ ~ ~ 1
+execute at @a as @a[scores={biome=0, soundtrackState=2},tag=!playing] run playsound ocean music @s ~ ~ ~ 1
+execute at @a as @a[scores={biome=1, soundtrackState=2},tag=!playing] run playsound plains music @s ~ ~ ~ 1
+execute at @a as @a[scores={biome=2, soundtrackState=2},tag=!playing] run playsound desert music @s ~ ~ ~ 1
+execute at @a as @a[scores={biome=3, soundtrackState=2},tag=!playing] run playsound mountains music @s ~ ~ ~ 1
+execute at @a as @a[scores={biome=4, soundtrackState=2},tag=!playing] run playsound forest music @s ~ ~ ~ 1
+execute at @a as @a[scores={biome=5, soundtrackState=2},tag=!playing] run playsound taiga music @s ~ ~ ~ 1
+execute at @a as @a[scores={biome=6, soundtrackState=2},tag=!playing] run playsound swamp music @s ~ ~ ~ 1
+execute at @a as @a[scores={biome=8, soundtrackState=2},tag=!playing] run playsound nether music @s ~ ~ ~ 1
+execute at @a as @a[scores={biome=9, soundtrackState=2},tag=!playing] run playsound the_end music @s ~ ~ ~ 1
+execute at @a as @a[scores={biome=14, soundtrackState=2},tag=!playing] run playsound mushroom_fields music @s ~ ~ ~ 1
+execute at @a as @a[scores={biome=21, soundtrackState=2},tag=!playing] run playsound jungle music @s ~ ~ ~ 1
 
 # Decrease soundtrack timer
 execute as @a[tag=playing] run scoreboard players remove @s soundtrackTimer 1
@@ -29,6 +42,8 @@ execute as @a[tag=!playing] run tag @s add playing
 
 # Restart music for reconnected clients
 execute as @a[scores={hasLeft=1..}] run scoreboard players set @s soundtrackTimer 0
+execute as @a[scores={hasLeft=1..}] run scoreboard players set @s soundtrackState 0
+
 execute as @a[scores={hasLeft=1..}] run scoreboard players set @s hasLeft 0
 
 # Reloop music

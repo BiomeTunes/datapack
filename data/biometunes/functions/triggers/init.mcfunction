@@ -2,6 +2,8 @@
 # Initializing variables
 scoreboard objectives add biome dummy "Current biome"
 scoreboard objectives add hasLeft minecraft.custom:minecraft.leave_game
+scoreboard objectives add soundtrackTimer dummy "Sound track timer"
+scoreboard objectives add soundtrackState dummy "State of the sound track"
 
 # Reseting players
 scoreboard players reset * biome 
