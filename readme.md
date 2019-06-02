@@ -2,7 +2,7 @@
 
 This is a minecraft datapack which changes music for the player dependent on biome type
 
-# Replace biome sound track with your own
+## Replace biome sound track with your own
 1. Make sure the sound file you want to use is saved in `.ogg` format. This is very important since this is the only file extension supported by Minecraft, all other formats will not be executed.
 2. Enter the biometunes resource pack and locate the folder `game`. 
 3. Take your file and replace it with another file in this directory and name your file to the name of the biome you want it to play in.
