@@ -1,12 +1,12 @@
 # Reset music if player switches dimension
 execute if score @s biome matches 8 run tag @s remove playing
-execute if score @s biome matches 8 run stopsound @s
+execute if score @s biome matches 8 run stopsound @s music
 execute if score @s biome matches 9 run tag @s remove playing
-execute if score @s biome matches 9 run stopsound @s
+execute if score @s biome matches 9 run stopsound @s music
 
 # Hard reset music if not smooth transition
 execute as @s[tag=!smoothTransition] run tag @s remove playing
-execute as @s[tag=!smoothTransition] run stopsound @s
+execute as @s[tag=!smoothTransition] run stopsound @s music
 
 # Always reset music when entering the end
 tag @s remove playing
