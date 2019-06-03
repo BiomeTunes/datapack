@@ -2,6 +2,12 @@
 
 This is a minecraft datapack which changes music for the player dependent on biome type
 
+## The control panel
+BiomeTunes support configuration for each individual user in the control panel. The control panel is reacable without op permission by every player. To access it simply call the following command:  
+```
+/trigger biomeTunes set 1
+```
+
 ## Replace biome sound track with your own
 1. Make sure the sound file you want to use is saved in `.ogg` format. This is very important since this is the only file extension supported by Minecraft, all other formats will not be executed.
 2. Enter the biometunes resource pack and locate the folder `game`. 
