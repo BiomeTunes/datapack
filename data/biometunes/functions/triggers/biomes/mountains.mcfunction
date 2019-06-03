@@ -1,6 +1,12 @@
-# Reset music if player was in other dimension
+# Reset music if player switches dimension
 execute if score @s biome matches 8 run tag @s remove playing
+execute if score @s biome matches 8 run stopsound @s
 execute if score @s biome matches 9 run tag @s remove playing
+execute if score @s biome matches 9 run stopsound @s
+
+# Hard reset music if not smooth transition
+execute as @s[tag=!smoothTransition] run tag @s remove playing
+execute as @s[tag=!smoothTransition] run stopsound @s
 
 # Enable intro track
 execute unless score @s biome matches 3 run scoreboard players set @s soundtrackState 1
