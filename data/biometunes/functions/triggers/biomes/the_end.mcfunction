@@ -1,3 +1,10 @@
+# Reset music if player was in other dimension
+execute if score @s biome matches 8 run tag @s remove playing
+execute if score @s biome matches 9 run tag @s remove playing
+
+# Always reset music when entering the end
+tag @s remove playing
+
 # Enable intro track
 execute unless score @s biome matches 9 run scoreboard players set @s soundtrackState 1
 execute if score @s soundtrackState matches 0 run scoreboard players set @s soundtrackState 1
