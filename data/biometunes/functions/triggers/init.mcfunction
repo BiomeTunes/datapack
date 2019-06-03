@@ -6,6 +6,7 @@ scoreboard objectives add soundtrackTimer dummy "Sound track timer"
 scoreboard objectives add soundtrackState dummy "State of the sound track"
 scoreboard objectives add biomeTunes trigger "Trigger for option menu"
 scoreboard objectives add opt1 trigger "Trigger for biome transition mode"
+scoreboard objectives add opt2 trigger "Trigger for biome shift message"
 
 # In order to not spam chat when players are triggering menu panel
 gamerule sendCommandFeedback false
