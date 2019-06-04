@@ -30,10 +30,10 @@ function biometunes:triggers/reset
 # 6 swamp
 # 8 nether
 # 9 the_end
-# 10 frozen_ocean -> taiga
-# 11 frozen_river -> taiga
-# 12 snowy_tundra -> taiga
-# 13 snowy_mountain -> mountains
+# 10 frozen_ocean -> snowy
+# 11 frozen_river -> snowy
+# 12 snowy_tundra -> snowy
+# 13 snowy_mountain -> snowy
 # 14 mushroom_fields
 # 15 mushroom_fields_shore -> mushroom_fields
 # 17 desert_hills -> desert
@@ -45,11 +45,13 @@ function biometunes:triggers/reset
 # 24 deep_ocean -> ocean
 # 27 birch_forest -> forest
 # 28 birch_forest_hills -> forest
-# 30 snowy_taiga -> taiga
-# 31 snowy_taiga_hills -> taiga
+# 30 snowy_taiga -> snowy
+# 31 snowy_taiga_hills -> snowy
 # 32 giant_tree_taiga -> taiga
 # 33 giant_tree_taiga_hills -> taiga
 # 34 wooded_mountains -> mountains
+# 35 savanna
+# 36 savanna_plateau -> savanna
 # 40 small_end_islands -> the_end
 # 41 end_midlands -> the_end
 # 42 end_highlands -> the_end
@@ -60,7 +62,7 @@ function biometunes:triggers/reset
 # 47 deep_warm_ocean -> ocean
 # 48 deep_lukewarm_ocean -> ocean
 # 49 deep_cold_ocean -> ocean
-# 50 deep_frozen_ocean -> ocean
+# 50 deep_frozen_ocean -> snowy
 # 129 sunflower_plains -> plains
 # 130 desert_lakes -> desert
 # 131 gravelly_mountains -> mountains
@@ -71,12 +73,12 @@ function biometunes:triggers/reset
 # 151 modified_jungle_edge -> jungle
 # 155 tall_birch_forest -> forest
 # 156 tall_birch_hills -> forest
-# 158 snowy_taiga_mountains -> taiga
+# 158 snowy_taiga_mountains -> snowy
 # 160 giant_spruce_taiga -> taiga
 # 161 giant_spruce_taiga_hills -> taiga
 # 162 modified_gravelly_mountains -> mountains
-# 163 shattered_savanna -> mountains
-# 164 shattered_savanna_plateau -> mountains
+# 163 shattered_savanna -> savanna
+# 164 shattered_savanna_plateau -> savanna
 # 165 eroded_badlands -> mountains
 # 168 bamboo_jungle -> jungle
 # 169 bamboo_jungle_hills -> jungle

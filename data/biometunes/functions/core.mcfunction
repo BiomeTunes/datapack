@@ -17,8 +17,10 @@ execute at @a as @a[scores={soundtrackTimer=10.., biome=5, soundtrackState=2},ta
 execute at @a as @a[scores={soundtrackTimer=10.., biome=6, soundtrackState=2},tag=!playing] run playsound swamp music @s ~ ~ ~ 1
 execute at @a as @a[scores={soundtrackTimer=10.., biome=8, soundtrackState=2},tag=!playing] run playsound nether music @s ~ ~ ~ 1
 execute at @a as @a[scores={soundtrackTimer=10.., biome=9, soundtrackState=2},tag=!playing] run playsound the_end music @s ~ ~ ~ 1
+execute at @a as @a[scores={soundtrackTimer=10.., biome=12, soundtrackState=2},tag=!playing] run playsound snowy music @s ~ ~ ~ 1
 execute at @a as @a[scores={soundtrackTimer=10.., biome=14, soundtrackState=2},tag=!playing] run playsound mushroom_fields music @s ~ ~ ~ 1
 execute at @a as @a[scores={soundtrackTimer=10.., biome=21, soundtrackState=2},tag=!playing] run playsound jungle music @s ~ ~ ~ 1
+execute at @a as @a[scores={soundtrackTimer=10.., biome=35, soundtrackState=2},tag=!playing] run playsound savanna music @s ~ ~ ~ 1
 
 # Add playing tag to all
 execute as @a[tag=!playing] run tag @s add playing
@@ -42,7 +44,9 @@ execute as @a[tag=playing, scores={soundtrackTimer=0,biome=5}] run advancement r
 execute as @a[tag=playing, scores={soundtrackTimer=0,biome=6}] run advancement revoke @s only biometunes:biomes/swamp
 execute as @a[tag=playing, scores={soundtrackTimer=0,biome=8}] run advancement revoke @s only biometunes:biomes/nether
 execute as @a[tag=playing, scores={soundtrackTimer=0,biome=9}] run advancement revoke @s only biometunes:biomes/the_end
+execute as @a[tag=playing, scores={soundtrackTimer=0,biome=12}] run advancement revoke @s only biometunes:biomes/snowy
 execute as @a[tag=playing, scores={soundtrackTimer=0,biome=14}] run advancement revoke @s only biometunes:biomes/mushroom_fields
 execute as @a[tag=playing, scores={soundtrackTimer=0,biome=21}] run advancement revoke @s only biometunes:biomes/jungle
+execute as @a[tag=playing, scores={soundtrackTimer=0,biome=35}] run advancement revoke @s only biometunes:biomes/savanna
 execute as @a[tag=playing, scores={soundtrackTimer=0}] run stopsound @s
 execute as @a[tag=playing, scores={soundtrackTimer=0}] run tag @s remove playing

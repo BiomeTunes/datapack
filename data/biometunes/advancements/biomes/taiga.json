@@ -16,46 +16,10 @@
                 "biome": "minecraft:taiga"
             }
         },
-        "frozen_river": {
-            "trigger": "minecraft:location",
-            "conditions": {
-                "biome": "minecraft:frozen_river"
-            }
-        },
-        "frozen_ocean": {
-            "trigger": "minecraft:location",
-            "conditions": {
-                "biome": "minecraft:frozen_ocean"
-            }
-        },
-        "snowy_mountains": {
-            "trigger": "minecraft:location",
-            "conditions": {
-                "biome": "minecraft:snowy_mountains"
-            }
-        },
-        "snowy_tundra": {
-            "trigger": "minecraft:location",
-            "conditions": {
-                "biome": "minecraft:snowy_tundra"
-            }
-        },
         "taiga_hills": {
             "trigger": "minecraft:location",
             "conditions": {
                 "biome": "minecraft:taiga_hills"
-            }
-        },
-        "snowy_taiga": {
-            "trigger": "minecraft:location",
-            "conditions": {
-                "biome": "minecraft:snowy_taiga"
-            }
-        },
-        "snowy_taiga_hills": {
-            "trigger": "minecraft:location",
-            "conditions": {
-                "biome": "minecraft:snowy_taiga_hills"
             }
         },
         "giant_tree_taiga": {
@@ -76,12 +40,6 @@
                 "biome": "minecraft:taiga_mountains"
             }
         },
-        "snowy_taiga_mountains": {
-            "trigger": "minecraft:location",
-            "conditions": {
-                "biome": "minecraft:snowy_taiga_mountains"
-            }
-        },
         "giant_spruce_taiga": {
             "trigger": "minecraft:location",
             "conditions": {
@@ -98,17 +56,10 @@
     "requirements": [
         [
             "taiga", 
-            "frozen_river", 
-            "frozen_ocean", 
-            "snowy_mountains", 
-            "snowy_tundra",
             "taiga_hills",
-            "snowy_taiga",
-            "snowy_taiga_hills",
             "giant_tree_taiga",
             "giant_tree_taiga_hills",
             "taiga_mountains",
-            "snowy_taiga_mountains",
             "giant_spruce_taiga",
             "giant_spruce_taiga_hills"
         ]

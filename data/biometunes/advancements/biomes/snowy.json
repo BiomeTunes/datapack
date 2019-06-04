@@ -1,77 +1,77 @@
 {
     "display": {
         "icon": {
-            "item": "minecraft:water_bucket"
+            "item": "minecraft:oak_sapling"
         },
-        "title": "Entered ocean",
-        "description": "You entered an ocean biome",
+        "title": "Entered snow",
+        "description": "You entered a snowy biome",
         "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
         "show_toast": false,
         "announce_to_chat": false
     },
     "criteria": {
-        "ocean": {
+        "snowy_tundra": {
             "trigger": "minecraft:location",
             "conditions": {
-                "biome": "minecraft:ocean"
+                "biome": "minecraft:snowy_tundra"
             }
         },
-        "deep_ocean": {
+        "snowy_mountains": {
             "trigger": "minecraft:location",
             "conditions": {
-                "biome": "minecraft:deep_ocean"
+                "biome": "minecraft:snowy_mountains"
             }
         },
-        "warm_ocean": {
+        "snowy_taiga": {
             "trigger": "minecraft:location",
             "conditions": {
-                "biome": "minecraft:warm_ocean"
+                "biome": "minecraft:snowy_taiga"
             }
         },
-        "lukewarm_ocean": {
+        "snowy_taiga_hills": {
             "trigger": "minecraft:location",
             "conditions": {
-                "biome": "minecraft:lukewarm_ocean"
+                "biome": "minecraft:snowy_taiga_hills"
             }
         },
-        "cold_ocean": {
+        "snowy_taiga_mountains": {
             "trigger": "minecraft:location",
             "conditions": {
-                "biome": "minecraft:cold_ocean"
+                "biome": "minecraft:snowy_taiga_mountains"
             }
         },
-        "deep_warm_ocean": {
+        "frozen_ocean": {
             "trigger": "minecraft:location",
             "conditions": {
-                "biome": "minecraft:deep_warm_ocean"
+                "biome": "minecraft:frozen_ocean"
             }
         },
-        "deep_lukewarm_ocean": {
+        "frozen_river": {
             "trigger": "minecraft:location",
             "conditions": {
-                "biome": "minecraft:deep_lukewarm_ocean"
+                "biome": "minecraft:frozen_river"
             }
         },
-        "deep_cold_ocean": {
+        "deep_frozen_ocean": {
             "trigger": "minecraft:location",
             "conditions": {
-                "biome": "minecraft:deep_cold_ocean"
+                "biome": "minecraft:deep_frozen_ocean"
             }
         }
     },
     "requirements": [
         [
-            "ocean",
-            "deep_ocean",
-            "warm_ocean",
-            "lukewarm_ocean",
-            "cold_ocean",
-            "deep_warm_ocean",
-            "deep_lukewarm_ocean",
-            "deep_cold_ocean"
+            "snowy_tundra",
+            "snowy_mountains",
+            "snowy_taiga",
+            "snowy_taiga_hills",
+            "snowy_taiga_mountains",
+            "frozen_ocean",
+            "frozen_river",
+            "deep_frozen_ocean"
         ]
     ],
     "rewards": {
-        "function": "biometunes:triggers/biomes/ocean"
+        "function": "biometunes:triggers/biomes/snowy"
     }
 }

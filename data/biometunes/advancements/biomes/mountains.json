@@ -16,12 +16,6 @@
                 "biome": "minecraft:mountains"
             }
         },
-        "snowy_mountains": {
-            "trigger": "minecraft:location",
-            "conditions": {
-                "biome": "minecraft:snowy_mountains"
-            }
-        },
         "mountain_edge": {
             "trigger": "minecraft:location",
             "conditions": {
@@ -44,18 +38,6 @@
             "trigger": "minecraft:location",
             "conditions": {
                 "biome": "minecraft:modified_gravelly_mountains"
-            }
-        },
-        "shattered_savanna": {
-            "trigger": "minecraft:location",
-            "conditions": {
-                "biome": "minecraft:shattered_savanna"
-            }
-        },
-        "shattered_savanna_plateau": {
-            "trigger": "minecraft:location",
-            "conditions": {
-                "biome": "minecraft:shattered_savanna_plateau"
             }
         },
         "eroded_badlands": {
