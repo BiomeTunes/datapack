@@ -5,7 +5,7 @@ This is a minecraft datapack which changes music for the player dependent on bio
 ## The control panel
 BiomeTunes support configuration for each individual user in the control panel. The control panel is reacable without op permission by every player. To access it simply call the following command:  
 ```
-/trigger biomeTunes set 1
+/trigger biomeTunes
 ```
 
 ## Replace biome sound track with your own
