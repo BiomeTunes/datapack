@@ -50,13 +50,10 @@
     "requirements": [
         [
             "mountains",
-            "snowy_mountains",
             "mountain_edge",
             "wooded_mountains",
             "gravelly_mountains",
             "modified_gravelly_mountains",
-            "shattered_savanna",
-            "shattered_savanna_plateau",
             "eroded_badlands"
         ]
     ],

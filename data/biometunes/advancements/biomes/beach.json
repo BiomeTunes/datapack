@@ -1,0 +1,28 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:oak_sapling"
+        },
+        "title": "Entered beach",
+        "description": "You entered a beach biome",
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "beach": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:beach"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "beach"
+        ]
+    ],
+    "rewards": {
+        "function": "biometunes:triggers/biomes/beach"
+    }
+}

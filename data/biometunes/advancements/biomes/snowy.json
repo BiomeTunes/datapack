@@ -57,6 +57,12 @@
             "conditions": {
                 "biome": "minecraft:deep_frozen_ocean"
             }
+        },
+        "ice_spikes": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:ice_spikes"
+            }
         }
     },
     "requirements": [
@@ -68,7 +74,8 @@
             "snowy_taiga_mountains",
             "frozen_ocean",
             "frozen_river",
-            "deep_frozen_ocean"
+            "deep_frozen_ocean",
+            "ice_spikes"
         ]
     ],
     "rewards": {

@@ -36,6 +36,7 @@ function biometunes:triggers/reset
 # 13 snowy_mountain -> snowy
 # 14 mushroom_fields
 # 15 mushroom_fields_shore -> mushroom_fields
+# 16 beach
 # 17 desert_hills -> desert
 # 18 wooded_hills -> forest
 # 19 taiga_hills -> taiga
@@ -45,6 +46,7 @@ function biometunes:triggers/reset
 # 24 deep_ocean -> ocean
 # 27 birch_forest -> forest
 # 28 birch_forest_hills -> forest
+# 29 dark_forest
 # 30 snowy_taiga -> snowy
 # 31 snowy_taiga_hills -> snowy
 # 32 giant_tree_taiga -> taiga
@@ -69,10 +71,12 @@ function biometunes:triggers/reset
 # 132 flower_forest -> forest
 # 133 taiga_mountains -> taiga
 # 134 swamp_hills -> swamp
+# 140 ice_spikes -> snowy
 # 149 modified_jungle -> jungle
 # 151 modified_jungle_edge -> jungle
 # 155 tall_birch_forest -> forest
 # 156 tall_birch_hills -> forest
+# 157 dark_forest_hills -> dark_forest
 # 158 snowy_taiga_mountains -> snowy
 # 160 giant_spruce_taiga -> taiga
 # 161 giant_spruce_taiga_hills -> taiga
