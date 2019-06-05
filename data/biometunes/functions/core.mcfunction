@@ -23,17 +23,24 @@ execute at @a as @a[scores={soundtrackTimer=10.., biome=21, soundtrackState=2},t
 execute at @a as @a[scores={soundtrackTimer=10.., biome=29, soundtrackState=2},tag=!playing] run playsound dark_forest music @s ~ ~ ~ 1
 execute at @a as @a[scores={soundtrackTimer=10.., biome=35, soundtrackState=2},tag=!playing] run playsound savanna music @s ~ ~ ~ 1
 
+# Overlay tracks
+execute at @a as @a[scores={overlayTimer=10.., biomeOverlay=16},tag=!playingOverlay] run playsound beach ambient @s ~ ~ ~ 1
+
 # Add playing tag to all
 execute as @a[tag=!playing] run tag @s add playing
+execute as @a[tag=!playingOverlay] run tag @s add playingOverlay
 
 # Restart music for reconnected clients
 execute as @a[scores={hasLeft=1..}] run scoreboard players set @s soundtrackTimer 0
+execute as @a[scores={hasLeft=1..}] run scoreboard players set @s overlayTimer 0
 execute as @a[scores={hasLeft=1..}] run scoreboard players set @s soundtrackState 0
 
 execute as @a[scores={hasLeft=1..}] run scoreboard players set @s hasLeft 0
 
 # Decrease soundtrack timer
 execute as @a[tag=playing, scores={soundtrackTimer=1..}] run scoreboard players remove @s soundtrackTimer 1
+# Decrease overlay timer
+execute as @a[tag=playing, scores={overlayTimer=1..}] run scoreboard players remove @s overlayTimer 1
 
 # Reloop music
 execute as @a[tag=playing, scores={soundtrackTimer=0,biome=0}] run advancement revoke @s only biometunes:biomes/ocean
@@ -47,9 +54,13 @@ execute as @a[tag=playing, scores={soundtrackTimer=0,biome=8}] run advancement r
 execute as @a[tag=playing, scores={soundtrackTimer=0,biome=9}] run advancement revoke @s only biometunes:biomes/the_end
 execute as @a[tag=playing, scores={soundtrackTimer=0,biome=12}] run advancement revoke @s only biometunes:biomes/snowy
 execute as @a[tag=playing, scores={soundtrackTimer=0,biome=14}] run advancement revoke @s only biometunes:biomes/mushroom_fields
-execute as @a[tag=playing, scores={soundtrackTimer=0,biome=16}] run advancement revoke @s only biometunes:biomes/beach
 execute as @a[tag=playing, scores={soundtrackTimer=0,biome=21}] run advancement revoke @s only biometunes:biomes/jungle
 execute as @a[tag=playing, scores={soundtrackTimer=0,biome=29}] run advancement revoke @s only biometunes:biomes/dark_forest
 execute as @a[tag=playing, scores={soundtrackTimer=0,biome=35}] run advancement revoke @s only biometunes:biomes/savanna
 execute as @a[tag=playing, scores={soundtrackTimer=0}] run stopsound @s music
 execute as @a[tag=playing, scores={soundtrackTimer=0}] run tag @s remove playing
+
+# Reloop overlay
+execute as @a[tag=playing, scores={overlayTimer=0,biomeOverlay=16}] run advancement revoke @s only biometunes:biomes/beach
+execute as @a[tag=playing, scores={overlayTimer=0,biomeOverlay=16}] run stopsound @s ambient
+execute as @a[tag=playing, scores={overlayTimer=0,biomeOverlay=16}] run tag @s remove playingOverlay

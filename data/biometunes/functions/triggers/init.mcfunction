@@ -1,8 +1,10 @@
 
 # Initializing variables
 scoreboard objectives add biome dummy "Current biome"
+scoreboard objectives add biomeOverlay dummy "Current biome overlay"
 scoreboard objectives add hasLeft minecraft.custom:minecraft.leave_game
 scoreboard objectives add soundtrackTimer dummy "Sound track timer"
+scoreboard objectives add overlayTimer dummy "Overlay timer"
 scoreboard objectives add soundtrackState dummy "State of the sound track"
 scoreboard objectives add biomeTunes trigger "Trigger for option menu"
 scoreboard objectives add opt1 trigger "Trigger for biome transition mode"
