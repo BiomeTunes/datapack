@@ -11,7 +11,7 @@ scoreboard objectives add opt1 trigger "Trigger for biome transition mode"
 scoreboard objectives add opt2 trigger "Trigger for biome shift message"
 
 # In order to not spam chat when players are triggering menu panel
-gamerule sendCommandFeedback false
+# gamerule sendCommandFeedback false
 
 # Reseting players
 scoreboard players reset * biome 
@@ -19,6 +19,13 @@ scoreboard players reset * hasLeft
 
 # Reset all advancements and music
 function biometunes:triggers/reset
+
+# Set version number
+
+
+tellraw @s ["",{"text":"### Biometunes","color":"dark_green"},{"text":" ###\n","color":"dark_green"},{"text":"Datapack successfully installed!\n","color":"green","italic":true},{"text":"Current version: ","color":"green","italic":false},{"text":"v0.1\n","color":"green","bold":true,"clickEvent":{"action":"open_url","value":"https://github.com/Hampfh/BiomeTunes"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"Open github repository","color":"green"}]}}},{"text":"To open the control panel type ","color":"green","bold":false},{"text":"/trigger biomeTunes","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger biomeTunes"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"Open control panel","color":"green"}]}}}]
+
+# {"command":"/tellraw @p %s","jobject":[{"text":"### Biometunes","color":"dark_green"},{"text":" ###\\n","color":"dark_green"},{"text":"Datapack successfully installed!\\n","color":"green","italic":true},{"text":"Current version: ","color":"green"},{"text":"v0.1\\n","color":"green","bold":true,"clickEvent":{"action":"open_url","value":"https://github.com/Hampfh/BiomeTunes"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"Open github repository","color":"green"}]}}},{"text":"To open the control panel type ","color":"green"},{"text":"\trigger biomeTunes","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger biomeTunes"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"Open control panel","color":"green"}]}}}],"jtemplate":"tellraw"}
 
 # Biome index https://minecraft.gamepedia.com/Biome/ID
 

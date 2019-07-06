@@ -23,7 +23,7 @@ execute at @a as @a[scores={soundtrackTimer=10.., biome=21, soundtrackState=2},t
 execute at @a as @a[scores={soundtrackTimer=10.., biome=29, soundtrackState=2},tag=!playing] run playsound dark_forest music @s ~ ~ ~ 1
 execute at @a as @a[scores={soundtrackTimer=10.., biome=35, soundtrackState=2},tag=!playing] run playsound savanna music @s ~ ~ ~ 1
 
-# Overlay tracks
+# Ambient tracks
 execute at @a as @a[scores={overlayTimer=10.., biomeOverlay=16},tag=!playingOverlay] run playsound beach ambient @s ~ ~ ~ 1
 
 # Add playing tag to all
@@ -60,7 +60,7 @@ execute as @a[tag=playing, scores={soundtrackTimer=0,biome=35}] run advancement 
 execute as @a[tag=playing, scores={soundtrackTimer=0}] run stopsound @s music
 execute as @a[tag=playing, scores={soundtrackTimer=0}] run tag @s remove playing
 
-# Reloop overlay
+# Reloop biome ambient sounds
 execute as @a[tag=playing, scores={overlayTimer=0,biomeOverlay=16}] run advancement revoke @s only biometunes:biomes/beach
 execute as @a[tag=playing, scores={overlayTimer=0,biomeOverlay=16}] run stopsound @s ambient
 execute as @a[tag=playing, scores={overlayTimer=0,biomeOverlay=16}] run tag @s remove playingOverlay
