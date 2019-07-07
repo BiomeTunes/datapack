@@ -23,7 +23,7 @@ scoreboard players set @s soundtrackState 2
 scoreboard players set @s biome 9
 
 # Set soundtrack time
-execute if score @s soundtrackState matches 2 run scoreboard players set @s[tag=!playing] soundtrackTimer 193360
+execute if score @s soundtrackState matches 2 run scoreboard players set @s[tag=!playing] soundtrackTimer 1920
 
 # Reset all advancements and music
 function biometunes:triggers/reset

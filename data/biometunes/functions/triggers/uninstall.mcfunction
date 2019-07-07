@@ -1,14 +1,15 @@
 scoreboard objectives remove biome 
-scoreboard objectives remove biomeOverlay
+scoreboard objectives remove biomeAmbient
 scoreboard objectives remove biomeTunes
 scoreboard objectives remove hasLeft
 scoreboard objectives remove opt1
 scoreboard objectives remove opt2
-scoreboard objectives remove overlayTimer
+scoreboard objectives remove ambientTimer
 scoreboard objectives remove soundtrackState
 scoreboard objectives remove soundtrackTimer 
 
 tag @a remove playing 
+tag @a remove playingAmbient
 tag @a remove receiveBiomeMsg
 tag @a remove smoothTransition
 tag @a remove biomeTunesModerator
