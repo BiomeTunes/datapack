@@ -8,6 +8,18 @@ BiomeTunes support configuration for each individual user in the control panel. 
 /trigger biomeTunes
 ```
 
+## Enabling the datapack
+To enable the datapack instantiate the setup call by calling the following function:
+```
+/function biometunes:triggers/init
+```
+
+## Removing the pack
+Apart from just removing the datapack you might also want to clear all scoreboards associated with it. This command will remove all tags and scoreboards associated with every player:
+```
+/function biometunes:triggers/uninstall
+```
+
 ## Replace biome sound track with your own
 1. Make sure the sound file you want to use is saved in `.ogg` format. This is very important since this is the only file extension supported by Minecraft, all other formats will not be executed.
 2. Enter the biometunes resource pack and locate the folder `game`. 
