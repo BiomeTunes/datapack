@@ -7,7 +7,7 @@ stopsound @a music minecraft:music.game
 stopsound @a music minecraft:music.nether
 stopsound @a music minecraft:music.under_water
 
-# Biome specific music
+# Play biome specific music
 execute at @a as @a[scores={soundtrackTimer=10.., biome=0, soundtrackState=2},tag=!playing] run playsound ocean music @s ~ ~ ~ 1
 execute at @a as @a[scores={soundtrackTimer=10.., biome=1, soundtrackState=2},tag=!playing] run playsound plains music @s ~ ~ ~ 1
 execute at @a as @a[scores={soundtrackTimer=10.., biome=2, soundtrackState=2},tag=!playing] run playsound desert music @s ~ ~ ~ 1
