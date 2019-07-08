@@ -6,7 +6,8 @@ execute as @s[tag=!smoothTransition] run stopsound @s ambient
 scoreboard players set @s biomeAmbient 16
 
 # Set ambient time
-scoreboard players set @s[tag=!playingAmbient] ambientTimer 360
+scoreboard players set @s[tag=!playingAmbient] ambientLength 360
+scoreboard players operation @s[tag=!playingAmbient] ambientTimer = @s[tag=!playingAmbient] ambientLength
 
 # Reset all advancements and music
 function biometunes:triggers/reset

@@ -7,6 +7,7 @@ scoreboard objectives remove opt2
 scoreboard objectives remove ambientTimer
 scoreboard objectives remove soundtrackState
 scoreboard objectives remove soundtrackTimer 
+scoreboard objectives remove ambientLength
 
 tag @a remove playing 
 tag @a remove playingAmbient

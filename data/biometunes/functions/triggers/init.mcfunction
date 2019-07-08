@@ -1,14 +1,22 @@
 
 # Initializing variables
-scoreboard objectives add biome dummy "Current biome"
-scoreboard objectives add biomeAmbient dummy "Current biome ambient"
+
 scoreboard objectives add hasLeft minecraft.custom:minecraft.leave_game
+
+# Sound track variables
+scoreboard objectives add biome dummy "Current biome"
 scoreboard objectives add soundtrackTimer dummy "Sound track timer"
-scoreboard objectives add ambientTimer dummy "Ambient timer"
 scoreboard objectives add soundtrackState dummy "State of the sound track"
+
+# Trigger variables
 scoreboard objectives add biomeTunes trigger "Trigger for option menu"
 scoreboard objectives add opt1 trigger "Trigger for biome transition mode"
 scoreboard objectives add opt2 trigger "Trigger for biome shift message"
+
+# Ambient variables
+scoreboard objectives add biomeAmbient dummy "Current biome ambient"
+scoreboard objectives add ambientTimer dummy "Ambient timer"
+scoreboard objectives add ambientLength dummy "Length of ambient sound"
 
 # In order to not spam chat when players are triggering menu panel
 # gamerule sendCommandFeedback false

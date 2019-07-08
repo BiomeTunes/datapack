@@ -26,6 +26,7 @@ execute at @a as @a[scores={soundtrackTimer=10.., biome=35, soundtrackState=2},t
 # Ambient tracks
 execute at @a as @a[scores={ambientTimer=10.., biomeAmbient=16},tag=!playingAmbient] run playsound ambient_beach ambient @s ~ ~ ~ 1
 execute at @a as @a[scores={ambientTimer=10.., biomeAmbient=4},tag=!playingAmbient] run playsound ambient_forest ambient @s ~ ~ ~ 1000 1 1
+execute at @a as @a[scores={ambientTimer=10.., biomeAmbient=4},tag=!playingAmbient] run say playing ambient
 
 # Add playing tag to all
 execute as @a[tag=!playing] run tag @s add playing
@@ -62,6 +63,6 @@ execute as @a[tag=playing, scores={soundtrackTimer=0}] run stopsound @s music
 execute as @a[tag=playing, scores={soundtrackTimer=0}] run tag @s remove playing
 
 # Reloop biome ambient sounds
-execute as @a[tag=playingAmbient, scores={ambientTimer=0,biomeAmbient=16}] run advancement revoke @s only biometunes:biomes/beach
+execute as @a[tag=playingAmbient, scores={ambientTimer=0}] run scoreboard players operation @s ambientTimer = @s ambientLength
 execute as @a[tag=playingAmbient, scores={ambientTimer=0}] run stopsound @s ambient
 execute as @a[tag=playingAmbient, scores={ambientTimer=0}] run tag @s remove playingAmbient

@@ -30,7 +30,8 @@ scoreboard players set @s biomeAmbient 4
 execute if score @s soundtrackState matches 2 run scoreboard players set @s[tag=!playing] soundtrackTimer 2740
 
 # Set ambient time
-scoreboard players set @s[tag=!playingAmbient] ambientTimer 580
+scoreboard players set @s ambientLength 580
+scoreboard players operation @s[tag=!playingAmbient] ambientTimer = @s[tag=!playingAmbient] ambientLength
 
 # Reset all advancements and music
 function biometunes:triggers/reset
