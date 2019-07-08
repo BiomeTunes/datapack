@@ -24,9 +24,8 @@ execute at @a as @a[scores={soundtrackTimer=10.., biome=29, soundtrackState=2},t
 execute at @a as @a[scores={soundtrackTimer=10.., biome=35, soundtrackState=2},tag=!playing] run playsound savanna music @s ~ ~ ~ 1
 
 # Ambient tracks
-execute at @a as @a[scores={ambientTimer=10.., biomeAmbient=16},tag=!playingAmbient] run playsound ambient_beach ambient @s ~ ~ ~ 1
 execute at @a as @a[scores={ambientTimer=10.., biomeAmbient=4},tag=!playingAmbient] run playsound ambient_forest ambient @s ~ ~ ~ 1000 1 1
-execute at @a as @a[scores={ambientTimer=10.., biomeAmbient=4},tag=!playingAmbient] run say playing ambient
+execute at @a as @a[scores={ambientTimer=10.., biomeAmbient=16},tag=!playingAmbient] run playsound ambient_beach ambient @s ~ ~ ~ 1
 
 # Add playing tag to all
 execute as @a[tag=!playing] run tag @s add playing
@@ -42,7 +41,7 @@ execute as @a[scores={hasLeft=1..}] run scoreboard players set @s hasLeft 0
 # Decrease soundtrack timer
 execute as @a[tag=playing, scores={soundtrackTimer=1..}] run scoreboard players remove @s soundtrackTimer 1
 # Decrease ambient timer
-execute as @a[tag=playing, scores={ambientTimer=1..}] run scoreboard players remove @s ambientTimer 1
+execute as @a[tag=playingAmbient, scores={ambientTimer=1..}] run scoreboard players remove @s ambientTimer 1
 
 # Reloop music
 execute as @a[tag=playing, scores={soundtrackTimer=0,biome=0}] run advancement revoke @s only biometunes:biomes/ocean
@@ -63,6 +62,6 @@ execute as @a[tag=playing, scores={soundtrackTimer=0}] run stopsound @s music
 execute as @a[tag=playing, scores={soundtrackTimer=0}] run tag @s remove playing
 
 # Reloop biome ambient sounds
-execute as @a[tag=playingAmbient, scores={ambientTimer=0}] run scoreboard players operation @s ambientTimer = @s ambientLength
 execute as @a[tag=playingAmbient, scores={ambientTimer=0}] run stopsound @s ambient
 execute as @a[tag=playingAmbient, scores={ambientTimer=0}] run tag @s remove playingAmbient
+execute as @a[tag=!playingAmbient, scores={ambientTimer=0}] run scoreboard players operation @s ambientTimer = @s ambientLength
