@@ -2,6 +2,18 @@
 
 This is a minecraft datapack which changes music for the player dependent on biome type
 
+## Enabling the datapack
+To enable the datapack instantiate the setup call by calling the following function:
+```
+/function biometunes:triggers/init
+```
+
+## Removing the pack
+Apart from just removing the datapack you might also want to clear all scoreboards associated with it. This command will remove all tags and scoreboards associated with every player:
+```
+/function biometunes:triggers/uninstall
+```
+
 ## The control panel
 BiomeTunes support configuration for each individual user in the control panel. The control panel is reacable without op permission by every player. To access it simply call the following command:  
 ```
