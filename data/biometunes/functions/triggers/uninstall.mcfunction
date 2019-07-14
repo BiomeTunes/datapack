@@ -2,6 +2,7 @@ scoreboard objectives remove biome
 scoreboard objectives remove biomeAmbient
 scoreboard objectives remove biomeTunes
 scoreboard objectives remove hasLeft
+scoreboard objectives remove bossfight
 scoreboard objectives remove opt1
 scoreboard objectives remove opt2
 scoreboard objectives remove ambientTimer
@@ -12,6 +13,7 @@ scoreboard objectives remove ambientLength
 tag @a remove playing 
 tag @a remove playingAmbient
 tag @a remove receiveBiomeMsg
+tag @a remove receiveBossMsg
 tag @a remove smoothTransition
 tag @a remove biomeTunesModerator
 
