@@ -10,9 +10,10 @@ scoreboard objectives add soundtrackState dummy "State of the sound track"
 scoreboard objectives add bossfight dummy "Bosses close to players"
 
 # Trigger variables
-scoreboard objectives add biomeTunes trigger "Trigger for option menu"
+scoreboard objectives add biomeTunes trigger "Trigger Control panel"
 scoreboard objectives add opt1 trigger "Trigger for biome transition mode"
 scoreboard objectives add opt2 trigger "Trigger for biome shift message"
+scoreboard objectives add opt3 trigger "Trigger for boss battle message"
 
 # Ambient variables
 scoreboard objectives add biomeAmbient dummy "Current biome ambient"

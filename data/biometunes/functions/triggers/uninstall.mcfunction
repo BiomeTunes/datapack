@@ -5,6 +5,7 @@ scoreboard objectives remove hasLeft
 scoreboard objectives remove bossfight
 scoreboard objectives remove opt1
 scoreboard objectives remove opt2
+scoreboard objectives remove opt3
 scoreboard objectives remove ambientTimer
 scoreboard objectives remove soundtrackState
 scoreboard objectives remove soundtrackTimer 
