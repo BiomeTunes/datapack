@@ -2,6 +2,11 @@
 # Initializing variables
 
 scoreboard objectives add hasLeft minecraft.custom:minecraft.leave_game
+scoreboard objectives add bt_pack_vars dummy "Biometunes datapack variables"
+
+# Set version number
+scoreboard players set #bt_version_main bt_pack_vars 0
+scoreboard players set #bt_version_second bt_pack_vars 2
 
 # Sound track variables
 scoreboard objectives add biome dummy "Current biome"
@@ -32,7 +37,7 @@ function biometunes:triggers/reset
 
 tellraw @s ["",{"text":"### Biometunes","color":"dark_green"},{"text":" ###\n","color":"dark_green"},{"text":"Datapack successfully installed!\n","color":"green","italic":true},{"text":"Current version: ","color":"green","italic":false},{"text":"v0.1\n","color":"green","bold":true,"clickEvent":{"action":"open_url","value":"https://github.com/Hampfh/BiomeTunes"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"Open github repository","color":"green"}]}}},{"text":"To open the control panel type ","color":"green","bold":false},{"text":"/trigger biomeTunes","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger biomeTunes"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"Open control panel","color":"green"}]}}}]
 
-# {"command":"/tellraw @p %s","jobject":[{"text":"### Biometunes","color":"dark_green"},{"text":" ###\\n","color":"dark_green"},{"text":"Datapack successfully installed!\\n","color":"green","italic":true},{"text":"Current version: ","color":"green"},{"text":"v0.1\\n","color":"green","bold":true,"clickEvent":{"action":"open_url","value":"https://github.com/Hampfh/BiomeTunes"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"Open github repository","color":"green"}]}}},{"text":"To open the control panel type ","color":"green"},{"text":"\trigger biomeTunes","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger biomeTunes"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"Open control panel","color":"green"}]}}}],"jtemplate":"tellraw"}
+# {"command":"/tellraw @p %s","jobject":[{"text":"### Biometunes","color":"dark_green"},{"text":" ###\\n","color":"dark_green"},{"text":"Datapack successfully installed!\\n","color":"green","italic":true},{"text":"Current version: #","color":"green"},{"score":{"name":"#bt_version_main","objective":"bt_pack_vars"},"color":"green","bold":true},{"text":".","color":"green","bold":true},{"score":{"name":"#bt_version_second","objective":"bt_pack_vars"},"color":"green","bold":true},{"text":"\\nTo open the control panel type ","color":"green"},{"text":"/trigger biomeTunes","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger biomeTunes"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"Open control panel","color":"green"}]}}}],"jtemplate":"tellraw"}
 
 # Biome index https://minecraft.gamepedia.com/Biome/ID
 
