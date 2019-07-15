@@ -35,17 +35,19 @@ scoreboard players reset * hasLeft
 # Reset all advancements and music
 function biometunes:triggers/reset
 
-tellraw @s ["",{"text":"### Biometunes","color":"dark_green"},{"text":" ###\n","color":"dark_green"},{"text":"Datapack successfully installed!\n","color":"green","italic":true},{"text":"Current version: ","color":"green","italic":false},{"text":"v0.1\n","color":"green","bold":true,"clickEvent":{"action":"open_url","value":"https://github.com/Hampfh/BiomeTunes"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"Open github repository","color":"green"}]}}},{"text":"To open the control panel type ","color":"green","bold":false},{"text":"/trigger biomeTunes","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger biomeTunes"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"Open control panel","color":"green"}]}}}]
+scoreboard players add #bt_instantiated bt_pack_vars 1
+
+tellraw @p ["",{"text":"### Biometunes","color":"dark_green"},{"text":" ###\n","color":"dark_green"},{"text":"Datapack successfully installed!\n","color":"green","italic":true},{"text":"Current version: #","color":"green","italic":false},{"score":{"name":"#bt_version_main","objective":"bt_pack_vars"},"color":"green","bold":true},{"text":".","color":"green","bold":true},{"score":{"name":"#bt_version_second","objective":"bt_pack_vars"},"color":"green","bold":true},{"text":"\nTo open the control panel type ","color":"green","bold":false},{"text":"/trigger biomeTunes","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger biomeTunes"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"Open control panel","color":"green"}]}}}]
 
 # {"command":"/tellraw @p %s","jobject":[{"text":"### Biometunes","color":"dark_green"},{"text":" ###\\n","color":"dark_green"},{"text":"Datapack successfully installed!\\n","color":"green","italic":true},{"text":"Current version: #","color":"green"},{"score":{"name":"#bt_version_main","objective":"bt_pack_vars"},"color":"green","bold":true},{"text":".","color":"green","bold":true},{"score":{"name":"#bt_version_second","objective":"bt_pack_vars"},"color":"green","bold":true},{"text":"\\nTo open the control panel type ","color":"green"},{"text":"/trigger biomeTunes","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger biomeTunes"},"hoverEvent":{"action":"show_text","value":{"text":"","extra":[{"text":"Open control panel","color":"green"}]}}}],"jtemplate":"tellraw"}
-
-# Biome index https://minecraft.gamepedia.com/Biome/ID
 
 # Boss fights
 # 0 No boss
 # 1 Ender dragon
 # 2 Wither
 # 3 Elder guardian
+
+# Biome index https://minecraft.gamepedia.com/Biome/ID
 
 # Active biomes
 # 0 Ocean 
