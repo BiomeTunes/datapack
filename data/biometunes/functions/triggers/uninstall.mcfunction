@@ -8,8 +8,8 @@ scoreboard objectives remove opt1
 scoreboard objectives remove opt2
 scoreboard objectives remove opt3
 scoreboard objectives remove ambientTimer
-scoreboard objectives remove soundtrackState
 scoreboard objectives remove soundtrackTimer 
+scoreboard objectives remove musicLength
 scoreboard objectives remove ambientLength
 
 tag @a remove playing 

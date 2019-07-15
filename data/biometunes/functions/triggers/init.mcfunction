@@ -11,8 +11,8 @@ scoreboard players set #bt_version_second bt_pack_vars 2
 # Sound track variables
 scoreboard objectives add biome dummy "Current biome"
 scoreboard objectives add soundtrackTimer dummy "Sound track timer"
-scoreboard objectives add soundtrackState dummy "State of the sound track"
 scoreboard objectives add bossfight dummy "Bosses close to players"
+scoreboard objectives add musicLength dummy "Length of music track"
 
 # Trigger variables
 scoreboard objectives add biomeTunes trigger "Trigger Control panel"

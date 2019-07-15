@@ -1,26 +1,20 @@
-# Reset music if player switches dimension
-execute if score @s biome matches 8 run tag @s remove playing
-execute if score @s biome matches 8 run stopsound @s music
-execute if score @s biome matches 9 run tag @s remove playing
-execute if score @s biome matches 9 run stopsound @s music
-
-# Hard reset music if not smooth transition
-execute as @s[tag=!smoothTransition] run tag @s remove playing
-execute as @s[tag=!smoothTransition] run stopsound @s music
+function biometunes:triggers/prebiome
 
 # Enable intro track
-execute unless score @s biome matches 2 run scoreboard players set @s soundtrackState 1
-execute if score @s soundtrackState matches 0 run scoreboard players set @s soundtrackState 1
-tellraw @s[tag=receiveBiomeMsg, scores={soundtrackState=1}] ["",{"text":"You entered a desert biome","color":"gray","italic":true}]
-
-# Enable main track 
-scoreboard players set @s soundtrackState 2
+execute unless score @s biome matches 2 run tellraw @s[tag=receiveBiomeMsg, scores={soundtrackState=1}] ["",{"text":"You entered a desert biome","color":"gray","italic":true}]
 
 # Set biome variable to plains
 scoreboard players set @s biome 2
+scoreboard players set @s biomeAmbient 2
 
 # Set soundtrack time
-execute if score @s soundtrackState matches 2 run scoreboard players set @s[tag=!playing] soundtrackTimer 4980
+scoreboard players set @s musicLength 4980
+scoreboard players operation @s[tag=!playing] soundtrackTimer = @s[tag=!playing] musicLength
+
+# Set ambient time
+scoreboard players set @s ambientLength 0
+scoreboard players operation @s[tag=!playingAmbient] ambientTimer = @s[tag=!playingAmbient] ambientLength
+
 
 # Reset all advancements and music
 function biometunes:triggers/reset
