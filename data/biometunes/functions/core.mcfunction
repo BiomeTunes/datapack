@@ -1,3 +1,4 @@
+
 # Turn of default minecraft music
 stopsound @a music minecraft:music.creative
 stopsound @a music minecraft:music.credits
@@ -11,20 +12,23 @@ stopsound @a music minecraft:music.under_water
 function biometunes:triggers/updatebosses
 
 # Play biome specific music
-execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=0},tag=!playing] run playsound ocean music @s ~ ~ ~ 1
-execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=1},tag=!playing] run playsound plains music @s ~ ~ ~ 1
-execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=2},tag=!playing] run playsound desert music @s ~ ~ ~ 1
-execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=3},tag=!playing] run playsound mountains music @s ~ ~ ~ 1
-execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=4},tag=!playing] run playsound forest music @s ~ ~ ~ 1
-execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=5},tag=!playing] run playsound taiga music @s ~ ~ ~ 1
-execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=6},tag=!playing] run playsound swamp music @s ~ ~ ~ 1
-execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=8},tag=!playing] run playsound nether music @s ~ ~ ~ 1
-execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=9},tag=!playing] run playsound the_end music @s ~ ~ ~ 1
-execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=12},tag=!playing] run playsound snowy music @s ~ ~ ~ 1
-execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=14},tag=!playing] run playsound mushroom_fields music @s ~ ~ ~ 1
-execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=21},tag=!playing] run playsound jungle music @s ~ ~ ~ 1
-execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=29},tag=!playing] run playsound dark_forest music @s ~ ~ ~ 1
-execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=35},tag=!playing] run playsound savanna music @s ~ ~ ~ 1
+execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=0},tag=!playing, tag=!underground] run playsound ocean music @s ~ ~ ~ 1
+execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=1},tag=!playing, tag=!underground] run playsound plains music @s ~ ~ ~ 1
+execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=2},tag=!playing, tag=!underground] run playsound desert music @s ~ ~ ~ 1
+execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=3},tag=!playing, tag=!underground] run playsound mountains music @s ~ ~ ~ 1
+execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=4},tag=!playing, tag=!underground] run playsound forest music @s ~ ~ ~ 1
+execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=5},tag=!playing, tag=!underground] run playsound taiga music @s ~ ~ ~ 1
+execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=6},tag=!playing, tag=!underground] run playsound swamp music @s ~ ~ ~ 1
+execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=8},tag=!playing, tag=!underground] run playsound nether music @s ~ ~ ~ 1
+execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=9},tag=!playing, tag=!underground] run playsound the_end music @s ~ ~ ~ 1
+execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=12},tag=!playing, tag=!underground] run playsound snowy music @s ~ ~ ~ 1
+execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=14},tag=!playing, tag=!underground] run playsound mushroom_fields music @s ~ ~ ~ 1
+execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=21},tag=!playing, tag=!underground] run playsound jungle music @s ~ ~ ~ 1
+execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=29},tag=!playing, tag=!underground] run playsound dark_forest music @s ~ ~ ~ 1
+execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=35},tag=!playing, tag=!underground] run playsound savanna music @s ~ ~ ~ 1
+# Play custom biome music
+execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=500},tag=!playing] run playsound undergrounds music @s ~ ~ ~ 1
+
 # Play boss music
 execute at @a as @a[scores={bossfight=1, musicTimer=10..},tag=!playing] run playsound ender_dragon music @s ~ ~ ~ 1
 execute at @a as @a[scores={bossfight=2, musicTimer=10..},tag=!playing] run playsound wither music @s ~ ~ ~ 1

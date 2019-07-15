@@ -1,4 +1,5 @@
 scoreboard objectives remove hasLeft
+scoreboard objectives remove posY
 
 scoreboard objectives remove biome 
 scoreboard objectives remove biomeAmbient
@@ -18,6 +19,7 @@ tag @a remove receiveBiomeMsg
 tag @a remove receiveBossMsg
 tag @a remove smoothTransition 
 tag @a remove biomeTunesModerator
+tag @a remove underground
 
 tellraw @s ["",{"text":"### Biometunes","color":"dark_green"},{"text":" ###\n","color":"dark_green"},{"text":"Current version: ","color":"green"},{"text":"v","color":"green","bold":true},{"score":{"name":"#bt_version_main","objective":"bt_pack_vars"},"color":"green","bold":true},{"text":".","color":"green","bold":true},{"score":{"name":"#bt_version_second","objective":"bt_pack_vars"},"color":"green","bold":true},{"text":"\nWorld has been detached from datapack and cleared. Datapack ready for removal","color":"dark_red","italic":true,"bold":false}]
 scoreboard objectives remove bt_pack_vars

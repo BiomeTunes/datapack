@@ -3,6 +3,7 @@
 
 scoreboard objectives add hasLeft minecraft.custom:minecraft.leave_game
 scoreboard objectives add bt_pack_vars dummy "Biometunes datapack variables"
+scoreboard objectives add posY dummy "Y Position of each player"
 
 # Set version number
 scoreboard players set #bt_version_main bt_pack_vars 0
@@ -115,3 +116,6 @@ tellraw @p ["",{"text":"### Biometunes","color":"dark_green"},{"text":" ###\n","
 # 165 eroded_badlands -> mountains
 # 168 bamboo_jungle -> jungle
 # 169 bamboo_jungle_hills -> jungle
+
+# Custom biomes
+# 500 underground
