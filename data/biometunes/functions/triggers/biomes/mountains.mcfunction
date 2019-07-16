@@ -8,7 +8,7 @@ scoreboard players set @s biome 3
 scoreboard players set @s biomeAmbient 3
 
 # Set soundtrack time
-scoreboard players set @s musicLength 1480
+scoreboard players set @s musicLength 1660
 scoreboard players operation @s[tag=!playing] musicTimer = @s[tag=!playing] musicLength
 
 # Set ambient time
