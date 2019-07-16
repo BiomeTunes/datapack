@@ -8,8 +8,8 @@ stopsound @a music minecraft:music.game
 stopsound @a music minecraft:music.nether
 stopsound @a music minecraft:music.under_water
 
-# Check for bosses
-function biometunes:triggers/updatebosses
+# Check for bosses for players that have enabled it
+execute as @a[tag=!nobossbattlemusic] run function biometunes:triggers/updatebosses
 
 # Play biome specific music
 execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=0},tag=!playing, tag=!underground] run playsound ocean music @s ~ ~ ~ 1
