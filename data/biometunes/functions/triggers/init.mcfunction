@@ -20,6 +20,7 @@ scoreboard objectives add biomeTunes trigger "Trigger Control panel"
 scoreboard objectives add opt1 trigger "Trigger for biome transition mode"
 scoreboard objectives add opt2 trigger "Trigger for biome shift message"
 scoreboard objectives add opt3 trigger "Trigger for boss battle message"
+scoreboard objectives add opt4 trigger "Trigger for boss battle"
 
 # Ambient variables
 scoreboard objectives add biomeAmbient dummy "Current biome ambient"
