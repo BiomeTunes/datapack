@@ -15,6 +15,7 @@ execute unless score @s biome matches 9 run advancement revoke @s only biometune
 execute unless score @s biome matches 12 run advancement revoke @s only biometunes:biomes/snowy
 execute unless score @s biome matches 14 run advancement revoke @s only biometunes:biomes/mushroom_fields
 execute unless score @s biome matches 21 run advancement revoke @s only biometunes:biomes/jungle
+execute unless score @s biome matches 27 run advancement revoke @s only biometunes:biomes/birch_forest
 execute unless score @s biome matches 29 run advancement revoke @s only biometunes:biomes/dark_forest
 execute unless score @s biome matches 35 run advancement revoke @s only biometunes:biomes/savanna
 

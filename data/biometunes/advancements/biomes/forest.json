@@ -16,16 +16,10 @@
                 "biome": "minecraft:forest"
             }
         },
-        "birch_forest": {
+        "wooded_hills": {
             "trigger": "minecraft:location",
             "conditions": {
-                "biome": "minecraft:birch_forest"
-            }
-        }, 
-        "birch_forest_hills": {
-            "trigger": "minecraft:location",
-            "conditions": {
-                "biome": "minecraft:birch_forest_hills"
+                "biome": "minecraft:wooded_hills"
             }
         },
         "flower_forest": {
@@ -33,28 +27,13 @@
             "conditions": {
                 "biome": "minecraft:flower_forest"
             }
-        },
-        "tall_birch_forest": {
-            "trigger": "minecraft:location",
-            "conditions": {
-                "biome": "minecraft:tall_birch_forest"
-            }
-        },
-        "tall_birch_hills": {
-            "trigger": "minecraft:location",
-            "conditions": {
-                "biome": "minecraft:tall_birch_hills"
-            }
         }
     },
     "requirements": [
         [
             "forest",
-            "birch_forest",
-            "birch_forest_hills",
             "flower_forest",
-            "tall_birch_forest",
-            "tall_birch_hills"
+            "wooded_hills"
         ]
     ],
     "rewards": {

@@ -75,8 +75,8 @@ tellraw @a ["",{"text":"### Biometunes","color":"dark_green"},{"text":" ### \n",
 # 22 jungle_hills -> jungle
 # 23 jungle_edge -> jungle
 # 24 deep_ocean -> ocean
-# 27 birch_forest -> forest
-# 28 birch_forest_hills -> forest
+# 27 birch_forest
+# 28 birch_forest_hills -> birch_forest
 # 29 dark_forest
 # 30 snowy_taiga -> snowy
 # 31 snowy_taiga_hills -> snowy
@@ -105,8 +105,8 @@ tellraw @a ["",{"text":"### Biometunes","color":"dark_green"},{"text":" ### \n",
 # 140 ice_spikes -> snowy
 # 149 modified_jungle -> jungle
 # 151 modified_jungle_edge -> jungle
-# 155 tall_birch_forest -> forest
-# 156 tall_birch_hills -> forest
+# 155 tall_birch_forest -> birch_forest
+# 156 tall_birch_hills -> birch_forest
 # 157 dark_forest_hills -> dark_forest
 # 158 snowy_taiga_mountains -> snowy
 # 160 giant_spruce_taiga -> taiga

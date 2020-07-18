@@ -24,6 +24,7 @@ execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=9},tag=!playing,
 execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=12},tag=!playing, tag=!underground] run playsound biometunes:music.snowy music @s ~ ~ ~ 1
 execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=14},tag=!playing, tag=!underground] run playsound biometunes:music.mushroom_fields music @s ~ ~ ~ 1
 execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=21},tag=!playing, tag=!underground] run playsound biometunes:music.jungle music @s ~ ~ ~ 1
+execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=27},tag=!playing, tag=!underground] run playsound biometunes:music.birch_forest music @s ~ ~ ~ 1
 execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=29},tag=!playing, tag=!underground] run playsound biometunes:music.dark_forest music @s ~ ~ ~ 1
 execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=35},tag=!playing, tag=!underground] run playsound biometunes:music.savanna music @s ~ ~ ~ 1
 # Play custom biome music
