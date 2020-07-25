@@ -7,8 +7,6 @@ execute unless score @s biome matches 27 run tellraw @s[tag=receiveBiomeMsg, sco
 scoreboard players set @s biome 27
 scoreboard players set @s biomeAmbient 27
 
-say hello
-
 # Set soundtrack time
 scoreboard players set @s musicLength 1640
 scoreboard players operation @s[tag=!playing] musicTimer = @s[tag=!playing] musicLength
