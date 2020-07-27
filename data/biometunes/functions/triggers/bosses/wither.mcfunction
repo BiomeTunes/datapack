@@ -9,4 +9,5 @@ execute as @s[tag=receiveBossMsg] unless score @s bossfight matches 2 run tellra
 scoreboard players set @s bossfight 2
 
 # Set soundtrack time
-scoreboard players set @s[scores={musicTimer=0}] musicTimer 100
+scoreboard players set @s musicLength 2920
+scoreboard players operation @s musicTimer = @s[tag=!playingAmbient] musicLength
