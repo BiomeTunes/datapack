@@ -8,6 +8,13 @@ stopsound @a music minecraft:music.game
 stopsound @a music minecraft:music.nether
 stopsound @a music minecraft:music.under_water
 
+# Restart music for reconnected clients
+execute as @a[scores={hasLeft=1..}] run scoreboard players set @s musicTimer 0
+execute as @a[scores={hasLeft=1..}] run scoreboard players set @s ambientTimer 0
+execute as @a[scores={hasLeft=1..}] run scoreboard players set @s ticksSinceLogin 0
+execute as @a[scores={hasLeft=1..}] run scoreboard players set @s bossfight 0
+execute as @a[scores={hasLeft=1..}] run scoreboard players set @s hasLeft 0
+
 # Check for bosses for players that have enabled it
 execute as @a[tag=!noBossBattleMusic] run function biometunes:triggers/updatebosses
 
@@ -42,16 +49,13 @@ execute at @a as @a[scores={ambientTimer=10.., biomeAmbient=16},tag=!playingAmbi
 execute as @a[tag=!playing] run tag @s add playing
 execute as @a[tag=!playingAmbient] run tag @s add playingAmbient
 
-# Restart music for reconnected clients
-execute as @a[scores={hasLeft=1..}] run scoreboard players set @s musicTimer 0
-execute as @a[scores={hasLeft=1..}] run scoreboard players set @s ambientTimer 0
-
-execute as @a[scores={hasLeft=1..}] run scoreboard players set @s hasLeft 0
-
 # Decrease soundtrack timer
 execute as @a[tag=playing, scores={musicTimer=1..}] run scoreboard players remove @s musicTimer 1
 # Decrease ambient timer
 execute as @a[tag=playingAmbient, scores={ambientTimer=1..}] run scoreboard players remove @s ambientTimer 1
+
+# Increase login timer
+execute as @a run scoreboard players add @s ticksSinceLogin 1
 
 # Resetting music
 execute as @a[tag=playing, scores={musicTimer=0}] run stopsound @s music

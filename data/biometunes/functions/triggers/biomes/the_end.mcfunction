@@ -6,7 +6,7 @@ tag @s remove playing
 # Enable intro track
 execute unless score @s biome matches 9 run tellraw @s[tag=receiveBiomeMsg, scores={soundtrackState=1}] ["",{"text":"You entered the end","color":"gray","italic":true}]
 
-# Set biome variable to plains
+# Set biome variable to the end
 scoreboard players set @s biome 9
 scoreboard players set @s biomeAmbient 9
 
