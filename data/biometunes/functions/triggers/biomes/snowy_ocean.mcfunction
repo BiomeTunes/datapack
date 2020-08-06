@@ -1,14 +1,14 @@
 function biometunes:triggers/prebiome
 
 # Enable intro track
-execute unless score @s biome matches 12 run tellraw @s[tag=receiveBiomeMsg, scores={soundtrackState=1}] ["",{"text":"You entered a snowy biome","color":"gray","italic":true}]
+execute unless score @s biome matches 10 run tellraw @s[tag=receiveBiomeMsg, scores={soundtrackState=1}] ["",{"text":"You entered a snowy ocean biome","color":"gray","italic":true}]
 
 # Set biome variable to plains
-scoreboard players set @s biome 12
-scoreboard players set @s biomeAmbient 12
+scoreboard players set @s biome 10
+scoreboard players set @s biomeAmbient 10
 
 # Set soundtrack time
-scoreboard players set @s musicLength 2600
+scoreboard players set @s musicLength 1840
 scoreboard players operation @s[tag=!playing] musicTimer = @s[tag=!playing] musicLength
 
 # Set ambient time

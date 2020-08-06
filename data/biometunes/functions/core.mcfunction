@@ -28,6 +28,7 @@ execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=5},tag=!playing,
 execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=6},tag=!playing, tag=!underground] run playsound biometunes:music.swamp music @s ~ ~ ~ 1
 execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=8},tag=!playing, tag=!underground] run playsound biometunes:music.nether music @s ~ ~ ~ 1
 execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=9},tag=!playing, tag=!underground] run playsound biometunes:music.the_end music @s ~ ~ ~ 1
+execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=10},tag=!playing, tag=!underground] run playsound biometunes:music.snowy_ocean music @s ~ ~ ~ 1
 execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=12},tag=!playing, tag=!underground] run playsound biometunes:music.snowy music @s ~ ~ ~ 1
 execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=14},tag=!playing, tag=!underground] run playsound biometunes:music.mushroom_fields music @s ~ ~ ~ 1
 execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=21},tag=!playing, tag=!underground] run playsound biometunes:music.jungle music @s ~ ~ ~ 1

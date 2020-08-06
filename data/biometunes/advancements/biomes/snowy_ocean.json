@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:oak_sapling"
+        },
+        "title": "Entered snow",
+        "description": "You entered a snowy biome",
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "frozen_ocean": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:frozen_ocean"
+            }
+        },
+        "deep_frozen_ocean": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "biome": "minecraft:deep_frozen_ocean"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "frozen_ocean",
+            "deep_frozen_ocean"
+        ]
+    ],
+    "rewards": {
+        "function": "biometunes:triggers/biomes/snowy_ocean"
+    }
+}

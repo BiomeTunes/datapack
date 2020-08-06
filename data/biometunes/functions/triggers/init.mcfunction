@@ -63,10 +63,10 @@ tellraw @a ["",{"text":"Biometunes","bold":true,"color":"dark_green"},{"text":"\
 # 6 swamp
 # 8 nether
 # 9 the_end
-# 10 frozen_ocean -> snowy
-# 11 frozen_river -> snowy
-# 12 snowy_tundra -> snowy
-# 13 snowy_mountain -> snowy
+# 10 frozen_ocean -> snowy_ocean (#10)
+# 11 frozen_river -> snowy_ocean (#10)
+# 12 snowy_tundra -> snowy (#12)
+# 13 snowy_mountain -> snowy (#12)
 # 14 mushroom_fields
 # 15 mushroom_fields_shore -> mushroom_fields
 # 16 beach
@@ -80,8 +80,8 @@ tellraw @a ["",{"text":"Biometunes","bold":true,"color":"dark_green"},{"text":"\
 # 27 birch_forest
 # 28 birch_forest_hills -> birch_forest
 # 29 dark_forest
-# 30 snowy_taiga -> snowy
-# 31 snowy_taiga_hills -> snowy
+# 30 snowy_taiga -> snowy (#12)
+# 31 snowy_taiga_hills -> snowy (#12)
 # 32 giant_tree_taiga -> taiga
 # 33 giant_tree_taiga_hills -> taiga
 # 34 wooded_mountains -> mountains
@@ -97,20 +97,20 @@ tellraw @a ["",{"text":"Biometunes","bold":true,"color":"dark_green"},{"text":"\
 # 47 deep_warm_ocean -> ocean
 # 48 deep_lukewarm_ocean -> ocean
 # 49 deep_cold_ocean -> ocean
-# 50 deep_frozen_ocean -> snowy
+# 50 deep_frozen_ocean -> snowy_ocean (#10)
 # 129 sunflower_plains -> plains
 # 130 desert_lakes -> desert
 # 131 gravelly_mountains -> mountains
 # 132 flower_forest -> forest
 # 133 taiga_mountains -> taiga
 # 134 swamp_hills -> swamp
-# 140 ice_spikes -> snowy
+# 140 ice_spikes -> snowy (#12)
 # 149 modified_jungle -> jungle
 # 151 modified_jungle_edge -> jungle
 # 155 tall_birch_forest -> birch_forest
 # 156 tall_birch_hills -> birch_forest
 # 157 dark_forest_hills -> dark_forest
-# 158 snowy_taiga_mountains -> snowy
+# 158 snowy_taiga_mountains -> snowy (#12)
 # 160 giant_spruce_taiga -> taiga
 # 161 giant_spruce_taiga_hills -> taiga
 # 162 modified_gravelly_mountains -> mountains
