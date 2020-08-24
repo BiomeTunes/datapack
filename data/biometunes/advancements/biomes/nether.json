@@ -10,15 +10,45 @@
         "announce_to_chat": false
     },
     "criteria": {
-        "visit_biome": {
+        "nether_wastes": {
             "trigger": "minecraft:location",
             "conditions": {
-                "biome": "minecraft:nether"
+                "biome": "minecraft:nether_wastes"
             }
-        }
+		},
+		"crimson_forest": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:crimson_forest"
+			}
+		},
+		"warped_forest": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:warped_forest"
+			}
+		},
+		"soul_sand_valley": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:soul_sand_valley"
+			}
+		},
+		"basalt_deltas": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:basalt_deltas"
+			}
+		}
     },
     "requirements": [
-        ["visit_biome"]
+        [
+			"nether_wastes",
+			"crimson_forest",
+			"warped_forest",
+			"soul_sand_valley",
+			"basalt_deltas"
+		]
     ],
     "rewards": {
         "function": "biometunes:triggers/biomes/nether"

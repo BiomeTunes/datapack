@@ -9,7 +9,7 @@ scoreboard objectives add ticksSinceLogin dummy "Ticks since player login"
 # Set version number
 scoreboard players set #bt_version_major bt_pack_vars 0
 scoreboard players set #bt_version_minor bt_pack_vars 3
-scoreboard players set #bt_version_patch bt_pack_vars 1
+scoreboard players set #bt_version_patch bt_pack_vars 2
 
 # Sound track variables
 scoreboard objectives add biome dummy "Current biome"
