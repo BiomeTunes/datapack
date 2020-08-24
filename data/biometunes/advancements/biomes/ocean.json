@@ -22,34 +22,10 @@
                 "biome": "minecraft:deep_ocean"
             }
         },
-        "warm_ocean": {
-            "trigger": "minecraft:location",
-            "conditions": {
-                "biome": "minecraft:warm_ocean"
-            }
-        },
-        "lukewarm_ocean": {
-            "trigger": "minecraft:location",
-            "conditions": {
-                "biome": "minecraft:lukewarm_ocean"
-            }
-        },
         "cold_ocean": {
             "trigger": "minecraft:location",
             "conditions": {
                 "biome": "minecraft:cold_ocean"
-            }
-        },
-        "deep_warm_ocean": {
-            "trigger": "minecraft:location",
-            "conditions": {
-                "biome": "minecraft:deep_warm_ocean"
-            }
-        },
-        "deep_lukewarm_ocean": {
-            "trigger": "minecraft:location",
-            "conditions": {
-                "biome": "minecraft:deep_lukewarm_ocean"
             }
         },
         "deep_cold_ocean": {
@@ -63,11 +39,7 @@
         [
             "ocean",
             "deep_ocean",
-            "warm_ocean",
-            "lukewarm_ocean",
             "cold_ocean",
-            "deep_warm_ocean",
-            "deep_lukewarm_ocean",
             "deep_cold_ocean"
         ]
     ],

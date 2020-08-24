@@ -91,11 +91,11 @@ tellraw @a ["",{"text":"Biometunes","bold":true,"color":"dark_green"},{"text":"\
 # 41 end_midlands -> the_end
 # 42 end_highlands -> the_end
 # 43 end_barrens -> the_end
-# 44 warm_ocean -> ocean
-# 45 lukewarm_ocean -> ocean
+# 44 warm_ocean
+# 45 lukewarm_ocean -> warm_ocean
 # 46 cold_ocean -> ocean
-# 47 deep_warm_ocean -> ocean
-# 48 deep_lukewarm_ocean -> ocean
+# 47 deep_warm_ocean -> warm_ocean
+# 48 deep_lukewarm_ocean -> warm_ocean
 # 49 deep_cold_ocean -> ocean
 # 50 deep_frozen_ocean -> snowy_ocean (#10)
 # 129 sunflower_plains -> plains
