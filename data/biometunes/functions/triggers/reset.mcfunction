@@ -20,5 +20,6 @@ execute unless score @s biome matches 27 run advancement revoke @s only biometun
 execute unless score @s biome matches 29 run advancement revoke @s only biometunes:biomes/dark_forest
 execute unless score @s biome matches 35 run advancement revoke @s only biometunes:biomes/savanna
 execute unless score @s biome matches 44 run advancement revoke @s only biometunes:biomes/warm_ocean
+execute unless score @s biome matches 132 run advancement revoke @s only biometunes:biomes/flower_forest
 
 execute unless score @s biomeAmbient matches 16 run advancement revoke @s only biometunes:biomes/beach

@@ -1,0 +1,28 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:oak_sapling"
+		},
+		"title": "Entered flower forest",
+		"description": "You entered a flower forest biome",
+		"background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"criteria": {
+		"flower_forest": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:flower_forest"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"flower_forest"
+		]
+	],
+	"rewards": {
+		"function": "biometunes:triggers/biomes/flower_forest"
+	}
+}

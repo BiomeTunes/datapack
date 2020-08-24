@@ -1,20 +1,19 @@
 function biometunes:triggers/prebiome
 
 # Enable intro track
-execute unless score @s biome matches 21 run tellraw @s[tag=receiveBiomeMsg, scores={soundtrackState=1}] ["",{"text":"You entered a jungle biome","color":"gray","italic":true}]
+execute unless score @s biome matches 132 run tellraw @s[tag=receiveBiomeMsg, scores={soundtrackState=1}] ["",{"text":"You entered a flower forest biome","color":"gray","italic":true}]
 
-# Set biome variable to plains
-scoreboard players set @s biome 21
-scoreboard players set @s biomeAmbient 21
+# Set biome variables to forest
+scoreboard players set @s biome 132
+scoreboard players set @s biomeAmbient 132
 
 # Set soundtrack time
-scoreboard players set @s musicLength 2880
+scoreboard players set @s musicLength 1360
 scoreboard players operation @s[tag=!playing] musicTimer = @s[tag=!playing] musicLength
 
 # Set ambient time
 scoreboard players set @s ambientLength 0
 scoreboard players operation @s[tag=!playingAmbient] ambientTimer = @s[tag=!playingAmbient] ambientLength
-
 
 # Reset all advancements and music
 function biometunes:triggers/reset
