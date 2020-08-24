@@ -1,7 +1,7 @@
 function biometunes:triggers/prebiome
 
 # Enable intro track
-execute unless score @s biome matches 35 run tellraw @s[tag=receiveBiomeMsg, scores={soundtrackState=1}] ["",{"text":"You entered a savanna biome","color":"gray","italic":true}]
+execute unless score @s biome matches 35 run tellraw @s[tag=receiveBiomeMsg] ["",{"text":"You entered a savanna biome","color":"gray","italic":true}]
 
 # Set biome variable to plains
 scoreboard players set @s biome 35

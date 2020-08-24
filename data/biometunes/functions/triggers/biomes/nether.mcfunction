@@ -4,7 +4,7 @@ function biometunes:triggers/prebiome
 tag @s remove playing
 
 # Enable intro track
-execute unless score @s biome matches 8 run tellraw @s[tag=receiveBiomeMsg, scores={soundtrackState=1}] ["",{"text":"You entered the nether","color":"gray","italic":true}]
+execute unless score @s biome matches 8 run tellraw @s[tag=receiveBiomeMsg] ["",{"text":"You entered the nether","color":"gray","italic":true}]
 
 # Set biome variable to plains
 scoreboard players set @s biome 8

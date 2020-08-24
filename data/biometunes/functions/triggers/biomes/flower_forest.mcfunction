@@ -1,7 +1,7 @@
 function biometunes:triggers/prebiome
 
 # Enable intro track
-execute unless score @s biome matches 132 run tellraw @s[tag=receiveBiomeMsg, scores={soundtrackState=1}] ["",{"text":"You entered a flower forest biome","color":"gray","italic":true}]
+execute unless score @s biome matches 132 run tellraw @s[tag=receiveBiomeMsg] ["",{"text":"You entered a flower forest biome","color":"gray","italic":true}]
 
 # Set biome variables to forest
 scoreboard players set @s biome 132
