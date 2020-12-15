@@ -26,7 +26,6 @@ execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=3},tag=!playing,
 execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=4},tag=!playing, tag=!underground] run playsound biometunes:music.forest music @s ~ ~ ~ 1
 execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=5},tag=!playing, tag=!underground] run playsound biometunes:music.taiga music @s ~ ~ ~ 1
 execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=6},tag=!playing, tag=!underground] run playsound biometunes:music.swamp music @s ~ ~ ~ 1
-execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=8},tag=!playing, tag=!underground] run playsound biometunes:music.nether music @s ~ ~ ~ 1
 execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=9},tag=!playing, tag=!underground] run playsound biometunes:music.the_end music @s ~ ~ ~ 1
 execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=10},tag=!playing, tag=!underground] run playsound biometunes:music.snowy_ocean music @s ~ ~ ~ 1
 execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=12},tag=!playing, tag=!underground] run playsound biometunes:music.snowy music @s ~ ~ ~ 1
@@ -37,6 +36,14 @@ execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=29},tag=!playing
 execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=35},tag=!playing, tag=!underground] run playsound biometunes:music.savanna music @s ~ ~ ~ 1
 execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=44},tag=!playing, tag=!underground] run playsound biometunes:music.warm_ocean music @s ~ ~ ~ 1
 execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=132},tag=!playing, tag=!underground] run playsound biometunes:music.flower_forest music @s ~ ~ ~ 1
+
+# Nether biomes
+execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=8},tag=!playing, tag=!underground] run playsound biometunes:music.nether_wastes music @s ~ ~ ~ 1
+execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=171},tag=!playing, tag=!underground] run playsound biometunes:music.crimson_forest music @s ~ ~ ~ 1
+execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=172},tag=!playing, tag=!underground] run playsound biometunes:music.warped_forest music @s ~ ~ ~ 1
+execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=173},tag=!playing, tag=!underground] run playsound biometunes:music.basalt_deltas music @s ~ ~ ~ 1
+execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=178},tag=!playing, tag=!underground] run playsound biometunes:music.soul_sand_valley music @s ~ ~ ~ 1
+
 # Play custom biome music
 execute at @a as @a[scores={bossfight=0, musicTimer=10.., biome=500},tag=!playing] run playsound biometunes:music.undergrounds music @s ~ ~ ~ 1
 

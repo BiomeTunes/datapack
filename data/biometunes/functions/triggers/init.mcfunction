@@ -65,7 +65,7 @@ tellraw @a ["",{"text":"Biometunes","bold":true,"color":"dark_green"},{"text":"\
 # 4 Forest 
 # 5 Taiga 
 # 6 swamp
-# 8 nether
+# 8 nether_wastes
 # 9 the_end
 # 10 frozen_ocean -> snowy_ocean (#10)
 # 11 frozen_river -> snowy_ocean (#10)
@@ -123,6 +123,10 @@ tellraw @a ["",{"text":"Biometunes","bold":true,"color":"dark_green"},{"text":"\
 # 165 eroded_badlands -> mountains
 # 168 bamboo_jungle -> jungle
 # 169 bamboo_jungle_hills -> jungle
+# 171 crimson_forest
+# 172 warped_forest
+# 173 basalt_deltas
+# 178 soul_sand_valley
 
 # Custom biomes
 # 500 underground

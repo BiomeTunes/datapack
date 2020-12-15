@@ -1,0 +1,28 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:oak_sapling"
+		},
+		"title": "Entered crimson forest",
+		"description": "You entered a crimson forest biome",
+		"background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"criteria": {
+		"crimson_forest": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:crimson_forest"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"crimson_forest"
+		]
+	],
+	"rewards": {
+		"function": "biometunes:triggers/biomes/nether/crimson_forest"
+	}
+}

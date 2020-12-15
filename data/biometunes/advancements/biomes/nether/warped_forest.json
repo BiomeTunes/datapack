@@ -1,0 +1,28 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:oak_sapling"
+		},
+		"title": "Entered warped forest",
+		"description": "You entered a warped forest biome",
+		"background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"criteria": {
+		"warped_forest": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "minecraft:warped_forest"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"warped_forest"
+		]
+	],
+	"rewards": {
+		"function": "biometunes:triggers/biomes/nether/warped_forest"
+	}
+}
